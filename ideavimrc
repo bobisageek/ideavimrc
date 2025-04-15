@@ -1,0 +1,19 @@
+sethandler a:vim
+sethandler <C-g> a:ide
+sethandler <S-CR> a:vim
+sethandler <C-Pageup> a:vim
+sethandler <C-Pagedown> a:vim
+sethandler <C-a> a:ide
+sethandler <C-e> n:ide
+
+set clipboard='unnamedplus'
+set relativenumber
+set ideajoin
+set whichwrap=b,s,h,l,<,>,[,]
+set wrapscan
+set smartcase
+set hlsearch
+set incsearch
+
+nnoremap <Esc> :nohls<CR>
+
