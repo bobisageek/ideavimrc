@@ -5,8 +5,13 @@ sethandler <C-Pageup> a:vim
 sethandler <C-Pagedown> a:vim
 sethandler <C-a> a:ide
 sethandler <C-e> n:ide
+sethandler <C-n> n:ide
+sethandler <C-c> v-x:ide
+sethandler <C-x> v-x:ide
+sethandler <C-v> v-x:ide
 
-set clipboard='unnamedplus'
+
+set clipboard='unnamed'
 set relativenumber
 set ideajoin
 set whichwrap=b,s,h,l,<,>,[,]
@@ -15,5 +20,14 @@ set smartcase
 set hlsearch
 set incsearch
 
+
+set which-key
+set notimeout
+
 nnoremap <Esc> :nohls<CR>
 
+noremap \vce :e ~/.config/ideavim/ideavimrc<CR>
+noremap \vcr :action IdeaVim.ReloadVimRc.reload<CR>
+noremap \vci :set trackactionids!<CR>
+
+noremap <Leader>gl :action Vcs.Show.Log<CR>
