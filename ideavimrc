@@ -1,3 +1,8 @@
+" vim: ft=vim
+
+let mapleader = "\<Space>"
+
+" mostly use vim commands, but override some shortcuts I use all the time
 sethandler a:vim
 sethandler <C-g> a:ide
 sethandler <S-CR> a:vim
@@ -9,25 +14,39 @@ sethandler <C-n> n:ide
 sethandler <C-c> v-x:ide
 sethandler <C-x> v-x:ide
 sethandler <C-v> v-x:ide
+sethandler <C-q> a:ide
 
 
-set clipboard='unnamed'
+set clipboard='unnamed,unnamedplus'
 set relativenumber
 set ideajoin
+" allow pretty much all motions to change lines
 set whichwrap=b,s,h,l,<,>,[,]
+" search can wrap
 set wrapscan
+" case-insensitive search unless mixed case search string
 set smartcase
 set hlsearch
 set incsearch
+" allow moving one space past EOL
+set virtualedit=onemore
+set scrolloff=15
 
-
+" turn on which-key and disable command timeout
 set which-key
+" set timeoutlen=5000
 set notimeout
 
-nnoremap <Esc> :nohls<CR>
+" clear highlighting on escape
+nmap <Esc> :nohls<CR>
 
-noremap \vce :e ~/.config/ideavim/ideavimrc<CR>
-noremap \vcr :action IdeaVim.ReloadVimRc.reload<CR>
-noremap \vci :set trackactionids!<CR>
+map <leader>vce :e ~/.config/ideavim/ideavimrc<CR>
+map <leader>vcr :action IdeaVim.ReloadVimRc.reload<CR>
+map <leader>vci :set trackactionids!<CR>
 
-noremap <Leader>gl :action Vcs.Show.Log<CR>
+noremap <leader>gl :action Vcs.Show.Log<CR>
+nmap Y y$
+
+" IDEA quick actions
+nmap <leader>a :action GotoAction<CR>
+nmap gh :action QuickJavaDoc<CR>
