@@ -36,6 +36,7 @@ set scrolloff=15
 set which-key
 " set timeoutlen=5000
 set notimeout
+let g:WhichKey_DefaultDelay = 0
 " which-key descrs, built-ins only show if g:WhichKey_ShowVimActions is true
 let g:WhichKeyDesc_goto_top = "gg goto first line"
 
@@ -45,7 +46,7 @@ nmap <Esc> :nohls<CR>
 
 map <leader>vce :e ~/.config/ideavim/.ideavimrc<CR>
 map <leader>vco :action IdeaVim.ReloadVimRc.reload<CR>
-map <leader>vcr :source ~/.config/ideavim/.ideavimrc<CR>
+map <leader>vcr :source ~/.config/ideavim/ideavimrc<CR>
 map <leader>vci :set trackactionids!<CR>
 
 noremap <leader>gl :action Vcs.Show.Log<CR>
@@ -56,3 +57,8 @@ nmap <leader>a :action GotoAction<CR>
 nmap gh :action QuickJavaDoc<CR>
 nmap gd :action GotoDeclaration<CR>
 nmap gu :action FindUsages<CR>
+
+
+nmap <C-W><left> <C-W>h
+nmap <C-W><right> <C-W>l
+nmap <leader>w <C-W>
