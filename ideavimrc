@@ -36,11 +36,12 @@ set scrolloff=15
 set which-key
 " set timeoutlen=5000
 set notimeout
+let g:WhichKeyDesc_goto_top = "gg goto first line"
 
 " clear highlighting on escape
 nmap <Esc> :nohls<CR>
 
-map <leader>vce :e ~/.config/ideavim/ideavimrc<CR>
+map <leader>vce :e ~/.config/ideavim/.ideavimrc<CR>
 map <leader>vcr :action IdeaVim.ReloadVimRc.reload<CR>
 map <leader>vci :set trackactionids!<CR>
 
