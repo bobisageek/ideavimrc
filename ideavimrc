@@ -1,14 +1,6 @@
-" vim: ft=vim
-
 let mapleader = "\<Space>"
 
 source ~/.config/ideavim/handlers.vim
 source ~/.config/ideavim/sets.vim
 source ~/.config/ideavim/which-key.vim
 source ~/.config/ideavim/keymaps.vim
-
-function Tasty()
-  echo 'Tasty!'
-endfunction
-
-nmap <leader>t :call Tasty()<CR>
