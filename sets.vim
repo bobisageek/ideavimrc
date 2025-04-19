@@ -1,4 +1,4 @@
-set clipboard='unnamed,unnamedplus'
+set clipboard='unnamed,unnamedplus,ideaput'
 set relativenumber
 set ideajoin
 " allow pretty much all motions to change lines
