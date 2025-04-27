@@ -15,3 +15,4 @@ set scrolloff=15
 set peekaboo
 set highlightedyank
 set visualbell
+set surround

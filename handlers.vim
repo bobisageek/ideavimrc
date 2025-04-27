@@ -11,4 +11,6 @@ sethandler <C-c> v-x:ide
 sethandler <C-x> v-x:ide
 sethandler <C-v> v-x:ide
 sethandler <C-q> a:ide
+sethandler <C-j> a:ide
+sethandler <C-k> a:ide
 

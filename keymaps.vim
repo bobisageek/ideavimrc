@@ -22,14 +22,18 @@ endfunction
 call s:mapDesc('<C-V>', '"', 'Registers', 'nore')
 call s:mapDesc('<C-V>', '<C-R>', 'Registers', 'inore')
 
+" vim config stuff
 call s:addDesc('<leader>v', 'Idea[V]im')
 call s:addDesc('<leader>vc', '[C]onfig')
-call s:nv('<leader>vce', ':e ~/.config/ideavim/.ideavimrc<CR>', '[e]dit vimrc')
+call s:nv('<leader>vce', ':e ~/.config/ideavim/ideavimrc<CR>', '[e]dit vimrc')
 call s:nv('<leader>vcr', ':source ~/.config/ideavim/ideavimrc<CR>', 'sou[r]ce vimrc')
 call s:nv('<leader>vci', ':set trackactionids!<CR>', 'toggle action track[i]ng')
 
+" git keys
 call s:addDesc('<leader>g', '[G]it')
 call s:mapDesc('<leader>gl', ':action Vcs.Show.Log<CR>', '[l]og')
+call s:mapDesc('<leader>gr', ':action Git.Fetch<CR>', '[l]og')
+call s:mapDesc('<leader>ga', ':action Annotate<CR>', '[l]og')
 nmap Y y$
 
 " IDEA quick actions
@@ -39,15 +43,24 @@ call s:mapDesc('gd', ':action GotoDeclaration<CR>', '[d]efinition')
 call s:mapDesc('gu', ':action FindUsages<CR>', '[u]sages')
 call s:mapDesc('gm', ':action FileStructurePopup<CR>', '[m]embers')
 
+" window manipulation
 nnoremap <C-W><left> <C-W>h
 nnoremap <C-W><right> <C-W>l
 call s:mapDesc('<leader>w', '<C-W>', '[W]indow')
 
+" searching
 call s:addDesc('s', '[S]earch')
 call s:mapDesc('sa', ':action GotoAction<CR>', '[a]ction')
 call s:mapDesc('sc', ':action GotoClass<CR>', '[c]lass')
 call s:mapDesc('sf', ':action GotoFile<CR>', '[f]ile')
 call s:mapDesc('sn', ':action GotoNamespace<CR>', '[n]amespace')
 call s:mapDesc('ss', ':action GotoSymbol<CR>', '[s]ymbol')
+call s:mapDesc('sj', ':action AceAction<CR>', 'ace[j]ump' )
 
+" this file
+call s:nv('<leader>ff', ':action ReformatCode<CR>', '[f]ormat')
+
+" display/views
+call s:addDesc('<leader>d', '[D]isplay')
+call s:mapDesc('<leader>dz', ':action ToggleZenMode<CR>', 'toggle [z]en mode')
 
