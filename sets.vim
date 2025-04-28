@@ -6,6 +6,7 @@ set whichwrap=b,s,h,l,<,>,[,]
 " search can wrap
 set wrapscan
 " case-insensitive search unless mixed case search string
+set ignorecase
 set smartcase
 set hlsearch
 set incsearch
