@@ -16,3 +16,4 @@ set peekaboo
 set highlightedyank
 set visualbell
 set surround
+set NERDTree
