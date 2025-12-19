@@ -32,8 +32,9 @@ call s:nv('<leader>vci', ':set trackactionids!<CR>', 'toggle action track[i]ng')
 " git keys
 call s:addDesc('<leader>g', '[G]it')
 call s:mapDesc('<leader>gl', ':action Vcs.Show.Log<CR>', '[l]og')
-call s:mapDesc('<leader>gr', ':action Git.Fetch<CR>', '[l]og')
-call s:mapDesc('<leader>ga', ':action Annotate<CR>', '[l]og')
+call s:mapDesc('<leader>gr', ':action Git.Fetch<CR>', '[r]efresh (fetch)')
+call s:mapDesc('<leader>ga', ':action Annotate<CR>', '[a]nnotate')
+call s:mapDesc('<leader>gp', ':action Vcs.Push<CR>', '[p]ush')
 nmap Y y$
 
 " IDEA quick actions

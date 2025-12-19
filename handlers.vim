@@ -14,3 +14,6 @@ sethandler <C-q> a:ide
 sethandler <C-j> a:ide
 sethandler <C-k> a:ide
 sethandler <C-t> a:ide
+sethandler <S-F10> a:ide
+sethandler <M-f> a:ide
+
