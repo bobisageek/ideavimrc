@@ -16,4 +16,6 @@ sethandler <C-k> a:ide
 sethandler <C-t> a:ide
 sethandler <S-F10> a:ide
 sethandler <M-f> a:ide
+sethandler <C-f> a:ide
+sethandler <C-\\> a:ide
 
