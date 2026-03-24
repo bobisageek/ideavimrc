@@ -59,7 +59,9 @@ call s:mapDesc('ss', ':action GotoSymbol<CR>', '[s]ymbol')
 call s:mapDesc('sj', ':action AceAction<CR>', 'ace[j]ump' )
 
 " this file
-call s:nv('<leader>ff', ':action ReformatCode<CR>', '[f]ormat')
+call s:nv('<leader>df', ':action ReformatCode<CR>', '[f]ormat')
+call s:nv('<leader>ff', ':action Find<CR>', '[f]ind in this [f]ile')
+call s:nv('<leader>sg', ':action FindInPath<CR>', '[f]ind [e]verywhere')
 
 " display/views
 call s:addDesc('<leader>d', '[D]isplay')
