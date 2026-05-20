@@ -35,6 +35,8 @@ call s:mapDesc('<leader>gl', ':action Vcs.Show.Log<CR>', '[l]og')
 call s:mapDesc('<leader>gr', ':action Git.Fetch<CR>', '[r]efresh (fetch)')
 call s:mapDesc('<leader>ga', ':action Annotate<CR>', '[a]nnotate')
 call s:mapDesc('<leader>gp', ':action Vcs.Push<CR>', '[p]ush')
+call s:mapDesc('<leader>gg', ':action Git.Pull<CR>', '[p]ull')
+call s:mapDesc('<leader>gb', ':action Git.Branches<CR>', '[b]ranches')
 nmap Y y$
 
 " IDEA quick actions
